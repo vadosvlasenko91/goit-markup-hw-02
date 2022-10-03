@@ -1,0 +1,46 @@
+body{
+    font-size: 14px;
+    color: #000000;
+}
+a {
+  text-decoration: none;
+  tex
+}
+li {
+  list-style: none;
+}
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo span {
+  color: #000000;
+}
+.menu {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.menu a:hover {
+  color: #2196f3;
+}
+.contact {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.contact a:hover {
+  color: #2196f3;
+}
