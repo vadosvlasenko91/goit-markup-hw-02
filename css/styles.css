@@ -1,46 +1,272 @@
-body{
-    font-size: 14px;
-    color: #000000;
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
-  tex
 }
-li {
+.root {
+  --up-white: #ffffff;
+  --background-header-footer: #2f303a;
+  --main-background: #f5f5f5;
+  --second-background: #f5f4fa;
+  --active: #2196f3;
+  --logo-title: #000000;
+  --color-title: #212121;
+  --color-text: #757575;
+  --contact-footer: #ffffff99;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  font-family: 'Roboto';
+  background-color: var(--main-background);
+  color: var(--color-title);
+  list-style: none;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.page-header {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.list {
   list-style: none;
 }
+
+/* ------------Шапка сайту---------- */
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway' sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+  padding-right: 93px;
 }
 .logo span {
   color: #000000;
 }
-.menu {
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}
+.list {
+  display: flex;
+}
+.auth-nav {
+  padding-right: 10px;
+}
+.menu li {
+  padding-right: 10px;
+}
+.menu .list a {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-.menu a:hover {
-  color: #2196f3;
-}
-.contact {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
 }
+.menu a:hover,
+.menu a:focus {
+  color: #2196f3;
+}
+.page-header .auth-nav li:hover,
+.page-header .auth-nav li:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+.auth-nav.list {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.auth-nav.list li {
+  margin-left: 50px;
+}
+
 .contact a:hover {
   color: #2196f3;
+}
+
+/* -------------HERO---------------- */
+.hero {
+  background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button {
+  display: block;
+  color: #ffffff;
+  background: #2196f3;
+  padding: 10px 32px 10px 32px;
+  font-size: 16px;
+  line-height: 1.88;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.foto {
+  display: flex;
+  justify-content: space-between;
+}
+.sigara {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.siga_block {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.siga_block--siga {
+  max-width: 25%;
+  padding: 0 15px 0 15px;
+}
+.siga_block--siga p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*------------------Наша команда----------- */
+.port-foto {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 94px;
+}
+.portmone {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+.comands {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.comads__all {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+.comads__all img {
+  box-shadow: 7px 8px 11px -3px rgb(0 0 0 / 50%);
+}
+.comands__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-bottom: 50px;
+}
+.comands__name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.foto p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* ----------------------Футер---------------- */
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__block {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.logo span {
+}
+.footer span.logo__footer {
+  color: #ffffff;
+}
+.contakt-list {
+  display: inline;
+}
+.street a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-bottom: 9px;
+}
+.street {
+  padding-bottom: 9px;
+}
+.contakt-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 9px;
 }
